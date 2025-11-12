@@ -1,10 +1,10 @@
 services:
   - type: web
-    name: telegram-777-bot
+    name: 777-telegram-bot
     env: python
     plan: free
     buildCommand: pip install -r requirements.txt
     startCommand: python Test4.py
     envVars:
       - key: BOT_TOKEN
-        value: "8225668512:AAE7jmJCuTOj0dyWqfK9tr8LsdrubWsYmF4"
+        value: "8225668512:AAFGuneASode6R-90p9bKg-8GKztEFiUtNs"
