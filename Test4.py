@@ -9,14 +9,20 @@ import time
 import json
 import requests
 import random
-import sqlite3
+import sqlite3  # Built-in, no need to install
 import asyncio
 from datetime import datetime
 from telegram import Update, InlineKeyboardMarkup, InlineKeyboardButton
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes, CallbackQueryHandler
 
+print("✅ Python version:", sys.version)
+print("✅ SQLite3 version:", sqlite3.version)
+print("✅ SQLite3 library version:", sqlite3.sqlite_version)
+
+# ... (ကျန်တဲ့ code အတူတူပါပဲ) ...
+
 # Render environment variables ကနေ token ယူပါ
-BOT_TOKEN = os.environ.get('BOT_TOKEN', "8225668512:AAE7jmJCuTOj0dyWqfK9tr8LsdrubWsYmF4")
+BOT_TOKEN = os.environ.get('BOT_TOKEN', "8225668512:AAFGuneASode6R-90p9bKg-8GKztEFiUtNs")
 
 # Channel configuration - Auto Signal ချမယ့် Channel
 SIGNAL_CHANNEL_USERNAME = "@sakuna_vip"
